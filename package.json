@@ -1,0 +1,30 @@
+{
+  "main": "src/index.html",
+  "name": "Pinger",
+  "window": {
+    "toolbar": true,
+    "frame": true,
+    "width": 1000,
+    "height": 600,
+    "position": "center"
+    // "kiosk": true
+    // "fullscreen": false
+    // "show_in_taskbar"
+    // "min_width":
+    // "min_height":
+    // "resizable": false,
+    // "icon": "icon.png",
+    // "show": false
+  },
+
+  "version": "0.1.0",
+
+  "maintainers": [
+    {
+      "name": "Axel Uriel Martínez Castillo",
+      "email": "ackzell@gmail.com",
+      "web": "ackzell.orgfree.com"
+    }
+  ]
+
+}

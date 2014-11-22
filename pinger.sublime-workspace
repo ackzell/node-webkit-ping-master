@@ -1,0 +1,588 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Bear",
+				"BearSchema"
+			],
+			[
+				"body",
+				"bodyParser"
+			],
+			[
+				"border-",
+				"border-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"DE",
+				"DeliveryGroupId"
+			],
+			[
+				"tem",
+				"templateUrl"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 250.0,
+		"selected_items":
+		[
+			[
+				"prj",
+				"Project: Save As"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ss ry",
+				"Set Syntax: Ruby"
+			],
+			[
+				"proclose",
+				"Project: Close"
+			],
+			[
+				"inp",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ipa",
+				"Package Control: Install Package"
+			],
+			[
+				"inpa",
+				"Package Control: Install Package"
+			],
+			[
+				"ssht",
+				"Set Syntax: HTML"
+			],
+			[
+				"ssjs",
+				"Set Syntax: JavaScript Next"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"ali",
+				"AlignTab: Live Preview Mode"
+			],
+			[
+				"ssco",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"ssjavas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sscof",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"ssja",
+				"Set Syntax: JavaScript Next"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"tab",
+				"AlignTab: Live Preview Mode"
+			],
+			[
+				"alignta",
+				"AlignTab: Live Preview Mode"
+			],
+			[
+				"align",
+				"AlignTab: Live Preview Mode"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"alig",
+				"AlignTab: Live Preview Mode"
+			],
+			[
+				"aligntab",
+				"AlignTab: Table Mode"
+			],
+			[
+				"sscss",
+				"Set Syntax: CSS"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"isnta",
+				"Package Control: Install Package"
+			],
+			[
+				"alignment",
+				"Preferences: Alignment File Settings – Default"
+			],
+			[
+				"proje",
+				"Project: Save As"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"clos",
+				"File: Close All"
+			],
+			[
+				"close",
+				"File: Close All"
+			],
+			[
+				"proj",
+				"Project: Close"
+			],
+			[
+				"sscoff",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"ssphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 480.0
+	},
+	"console":
+	{
+		"height": 204.0,
+		"history":
+		[
+			"sublime.log_commands(True)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/C/Program Files/Sublime Text/Data/Packages/User/Preferences.sublime-settings",
+		"/H/vagrant_meteor/meteor/Vagrantfile",
+		"/H/vagrant_meteor/meteor.sh",
+		"/h/vagrant_meteor/Vagrantfile",
+		"/C/Program Files/Sublime Text/Data/Packages/User/AlignTab.sublime-settings",
+		"/C/Program Files/Sublime Text/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Program Files/Sublime Text/Data/Packages/Default/Preferences.sublime-settings",
+		"/C/Program Files/Sublime Text/Data/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Ackzell/Documents/REST_API/rest_api_coffee_excercise/app/css/styles.css",
+		"/C/Program Files/Sublime Text/Data/Packages/AlignTab/AlignTab.sublime-settings",
+		"/C/Program Files/Sublime Text/Data/Packages/Alignment/Base File.sublime-settings",
+		"/C/Program Files/Sublime Text/Data/Packages/User/Base File.sublime-settings",
+		"/C/Program Files/Sublime Text/Data/Packages/User/Context.sublime-menu",
+		"/C/Program Files/Sublime Text/Data/Packages/User/JSON.sublime-settings",
+		"/C/Program Files/Sublime Text/Data/Packages/Better CoffeeScript/CoffeeScript.sublime-settings",
+		"/C/Program Files/Sublime Text/Data/Packages/Better CoffeeScript/Keymaps/Default (Windows).sublime-keymap",
+		"/C/Program Files/Sublime Text/Data/Packages/Terminal/Base File.sublime-settings",
+		"/C/Program Files/Sublime Text/Data/Packages/User/CoffeeScript.sublime-settings",
+		"/C/Program Files/Sublime Text/Data/Packages/Alignment/Default (Windows).sublime-keymap",
+		"/c/Users/Ackzell/.dotfiles/myprog.sh",
+		"/c/Users/Ackzell/.bashrc",
+		"/C/Users/Ackzell/Documents/REST_API/rest_api_coffee_excercise/lessons_learned.md",
+		"/C/Users/Ackzell/Documents/.bas",
+		"/C/Users/Ackzell/Downloads/Sublime Text Build 3059 x64/Data/Installed Packages/ackzell Color Schemes/sublime/freshcut.tmTheme",
+		"/C/Users/Ackzell/Downloads/Sublime Text Build 3059 x64/Data/Installed Packages/ackzell Color Schemes/package-metadata.json",
+		"/C/Users/Ackzell/Downloads/Sublime Text Build 3059 x64/Data/Installed Packages/ackzell Color Schemes/build.xml",
+		"/C/Users/Ackzell/Downloads/Sublime Text Build 3059 x64/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Ackzell/AppData/Local/Temp/7zE99C1.tmp/freshcut.tmTheme",
+		"/C/Users/Ackzell/Downloads/Sublime Text Build 3059 x64/Data/Installed Packages/Theme - Cyanide.sublime-package",
+		"/C/Users/Ackzell/Documents/REST_API/rest_api_coffee_excercise/.gitignore",
+		"/C/Users/Ackzell/Documents/REST_API/rest_api_coffee_excercise/node_modules/coffee-script/lib/coffee-script/grammar.js",
+		"/C/Users/Ackzell/Documents/REST_API/rest_api_coffee_excercise/node_modules/body-parser/lib/types/text.js",
+		"/C/Users/Ackzell/Documents/REST_API/rest_api_coffee_excercise/app.js",
+		"/C/Users/Ackzell/Documents/REST_API/package.json",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/css/app.css",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/services/deliveryGroupsFactory.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/services/authFactory.js",
+		"/C/Users/Ackzell/Downloads/notes",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/services/appService.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/views/ui/trafficking/treeView.html",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/controllers/treeviewController.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/controllers/navController.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/controllers/mdxUIController.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/routes/trafficking/trafficking.html",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/routes/decision-diagram/decision-diagram.html",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/controllers/funnelViewController.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/services/deliveryGroupFactory.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/controllers/decisiontree.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/app.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/services/geoDataFactory.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/index.html",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/directives/filteredSelect/filteredSelect.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/directives/treeView/treeView.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/views/treeView.html",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/gruntfile.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/bootstrap-3.2.0-dist/fonts/glyphicons-halflings-regular.svg",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/views/ui/geoTargetingUI.html",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/fonts/titilliumweb-regular-webfont.svg",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/textAngular.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/unit-tests/tests/servicesCheck.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/campaign-strategy-dashboard.iml",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/angular/angular-route.min.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/angular/angular-route.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/unit-tests/angular-mocks.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/angular/angular.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/views/ui/addNoteUI.html",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/grunt-contrib-connect/node_modules/connect/node_modules/method-override/History.md",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/grunt/lib/grunt/option.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/grunt-contrib-connect/node_modules/connect/node_modules/on-headers/History.md",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/grunt/node_modules/coffee-script/lib/coffee-script/optparse.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/grunt-contrib-connect/node_modules/connect/node_modules/serve-index/node_modules/batch/component.json",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/grunt-contrib-connect/node_modules/connect/node_modules/bytes/component.json",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/fonts/titilliumweb-semibold-webfont.woff",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/fonts/titilliumweb-semibold-webfont.svg",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/fonts/titilliumweb-semibold-demo.html",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/grunt-contrib-connect/node_modules/connect/node_modules/body-parser/HISTORY.md",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/grunt-contrib-watch/node_modules/gaze/node_modules/globule/node_modules/glob/test/root-nomount.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/grunt-contrib-watch/node_modules/gaze/node_modules/globule/node_modules/glob/test/root.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/load-grunt-tasks/node_modules/findup-sync/node_modules/glob/test/root-nomount.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/grunt/node_modules/findup-sync/node_modules/glob/test/root-nomount.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/load-grunt-tasks/node_modules/findup-sync/node_modules/glob/test/root.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/grunt/node_modules/findup-sync/node_modules/glob/test/root.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/grunt/node_modules/glob/test/root-nomount.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/grunt/node_modules/glob/test/root.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/load-grunt-tasks/node_modules/findup-sync/node_modules/glob/test/new-glob-optional-options.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/grunt/node_modules/findup-sync/node_modules/glob/test/new-glob-optional-options.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/angular-bootstrap-nav-tree/LICENSE",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/angular-bootstrap-nav-tree/bower.json",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/angular-bootstrap-nav-tree/.bower.json",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/bootstrap-3.2.0-dist/fonts/glyphicons-halflings-regular.woff",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/angular-bootstrap-nav-tree/dist/abn_tree_directive.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/angular-bootstrap-nav-tree/dist/abn_tree.css",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/ui-bootstrap-tpls-0.11.0.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/bootstrap-3.2.0-dist/css/bootstrap-theme.min.css",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/bootstrap-3.2.0-dist/css/bootstrap-theme.css.map",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/bootstrap-3.2.0-dist/js/bootstrap.min.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/bootstrap-3.2.0-dist/css/bootstrap.min.css",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/bootstrap-3.2.0-dist/css/bootstrap.css.map",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/bootstrap-3.2.0-dist/css/bootstrap-theme.css",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/bootstrap-3.2.0-dist/js/bootstrap.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/scripts/bootstrap-3.2.0-dist/css/bootstrap.css",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/unit-tests/lib/jasmine-2.0.2/boot.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/fonts/OpenSans.woff",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/grunt/node_modules/grunt-legacy-util/test/fixtures/Gruntfile-execArgv.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/utils/polyfills.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/grunt/node_modules/underscore.string/test/underscore.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/argument_parser.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/app/utils/polyfills/indexOf.js",
+		"/C/Users/Ackzell/Documents/Sizmek/campaign-strategy-dashboard/package.json",
+		"/C/Users/Ackzell/Downloads/multi-select/angular-multi-select-master/angular-multi-select.js",
+		"/C/Users/Ackzell/Downloads/multi-select/angular-multi-select-master/demo/app.html",
+		"/C/Users/Ackzell/Documents/cv_part",
+		"/C/node/smellsLikeBakin/index.html",
+		"/C/node/smellsLikeBakin/css/style.css",
+		"/C/Users/Ackzell/Downloads/Sublime Text Build 3059 x64/Data/Packages/LiveReload/LiveReload.sublime-settings",
+		"/C/node/smellsLikeBakin/img/a.txt",
+		"/C/node/ng-book/index.html",
+		"/C/node/ng-book/js/main.js",
+		"/C/node/ng-book/templates/home.html",
+		"/C/node/ng-book/css/app.css",
+		"/C/node/ng-book/node_modules/http-server/node_modules/union/node_modules/pkginfo/examples/all-properties.js",
+		"/C/node/ng-book/templates/Settings.html",
+		"/C/node/ng-book/bower.json",
+		"/C/node/ng-book/bower_components/angular/bower.json",
+		"/C/node/ng-book/package.json",
+		"/C/node/node-webkit-hipster-seed/MyApp/app/styles/app.less",
+		"/C/node/node-webkit-example/app/views/index.html",
+		"/C/node/node-webkit-example/node_modules/matchdep/lib/matchdep.js"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 118.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ps",
+			"power",
+			"Vagrant.configure(\"2\")",
+			"vagrant.configure(\"2\")",
+			"map",
+			"tab",
+			" true",
+			"funnel",
+			"button",
+			"select",
+			"default",
+			"distribution",
+			"!!!!!",
+			"!!!",
+			"name",
+			"Name",
+			"watch",
+			"config",
+			".zip",
+			"underscore",
+			"jshint",
+			"files",
+			"jshint",
+			"jshunt",
+			"underscore",
+			"jshint",
+			"gutter",
+			"number",
+			"caret",
+			"cursor",
+			"theme"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 42.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "pinger.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"app",
+				"app.coffee"
+			],
+			[
+				"bear",
+				"app\\models\\bear.coffee"
+			],
+			[
+				"giti",
+				".gitignore"
+			],
+			[
+				"traf",
+				"app\\routes\\trafficking\\trafficking.html"
+			],
+			[
+				"nav",
+				"app\\controllers\\navController.js"
+			],
+			[
+				"dgfa",
+				"app\\services\\deliveryGroupFactory.js"
+			],
+			[
+				"funne",
+				"app\\controllers\\funnelViewController.js"
+			],
+			[
+				"deci",
+				"app\\routes\\decision-diagram\\decision-diagram.html"
+			],
+			[
+				"app.css",
+				"css\\app.css"
+			],
+			[
+				"grun",
+				"gruntfile.js"
+			],
+			[
+				"tra",
+				"app\\routes\\trafficking\\trafficking.html"
+			],
+			[
+				"service",
+				"app\\services\\appService.js"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"geo",
+				"app\\views\\ui\\geoTargetingUI.html"
+			],
+			[
+				"a",
+				"css\\app.css"
+			],
+			[
+				"matchde",
+				"node_modules\\matchdep\\lib\\matchdep.js"
+			],
+			[
+				"config.js",
+				"node_modules\\grunt\\lib\\grunt\\config.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Ackzell\\Documents\\REST_API\\rest_api.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 262.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

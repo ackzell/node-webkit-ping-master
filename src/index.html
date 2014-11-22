@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="pinger">
+  <head>
+    <title>Pinger!</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+
+  </head>
+  <body>
+    <!-- <header> -->
+  <!--     <div id="windowControlMinimize">Minimize!</div>
+      <div id="windowControlClose">Close!</div>
+      <div id="windowControlMaximize">Maximize!</div>
+   <!--</header> -->
+
+
+   <div class="container" ng-controller="MainCtrl as mc">
+    <div class="row">
+
+        <form class="form-inline" role="form" ng-submit="mc.addIP()">
+          <div class="form-group">
+            <div class="input-group">
+              <label class="sr-only" for="IP_field">IP Adress</label>
+              <input type="text" class="form-control" id="IP_field" placeholder="Enter an IP adress / hostname" ng-model="mc.ip.address">
+            </div>
+            <div class="input-group">
+              <label class="sr-only" for="alias_field">Alias</label>
+              <input type="text" class="form-control" id="alias_field" placeholder="Enter an IP alias" ng-model="mc.ip.alias">
+            </div>
+          </div>
+          {{ip}}
+          <button type="submit" class="btn btn-default">Add</button>
+        </form>
+
+      </div>
+
+      <div class="row">
+        Current added IPs:
+      <ul>
+          <li ng-repeat="item in mc.ipArray">
+              <strong>IP adress / hostname:</strong> {{item.address}}
+              <strong>IP alias:</strong>  {{item.alias}}
+          </li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <button class="btn btn-primary" ng-click="mc.pingRemotes()">Ping Remotes</button>
+      </div>
+
+  </div>
+
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+  <!--<script src="js/windowManagement.js"></script>-->
+  <script src="app.js"></script>
+
+  </body>
+</html>
