@@ -36,24 +36,43 @@
       </div>
 
       <div class="row">
-        Current added IPs:
-      <ul>
-          <li ng-repeat="item in mc.ipArray">
-              <strong>IP adress / hostname:</strong> {{item.address}}
-              <strong>IP alias:</strong>  {{item.alias}}
-          </li>
-        </ul>
+        <table class="table table-condensed table-hover">
+
+          <caption>Current added IPs:</caption>
+
+          <thead>
+            <tr>
+              <th>IP Adress / hostname</th>
+              <th>IP Alias</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr ng-repeat="item in mc.ipArray">
+              <td>{{item.address}}</td>
+              <td>{{item.alias}}</td>
+              <td>{{item.status}}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
       <div class="row">
-        <button class="btn btn-primary" ng-click="mc.pingRemotes()">Ping Remotes</button>
+        <button class="btn btn-success" ng-click="mc.pingRemotes()">Start Pinging</button>
+        <button class="btn btn-danger" ng-click="mc.stopPing()">Stop Pinging</button>
       </div>
+
 
   </div>
 
 
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+  <script type="text/javascript" src="js/controllers/MainCtrl.js"></script>
+
+  <script type="text/javascript" src="js/services/tcpFactory.js"></script>
 
   <!--<script src="js/windowManagement.js"></script>-->
   <script src="app.js"></script>
