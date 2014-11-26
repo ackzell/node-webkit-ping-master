@@ -6,7 +6,11 @@ function MainCtrl (TCPService) {
       This is going to be the model that the application uses to
       represent an ip address
      */
-    var ip = {};
+    var ip = {
+      address: null,
+      alias: null,
+      status: null
+    };
 
 
     /*
@@ -45,13 +49,22 @@ function MainCtrl (TCPService) {
       var len = vm.ipArray.length;
 
       vm.pingerInterval = setInterval(function(){
-        for(var i = 0; i < len; i++ ){
 
-          TCPService.ping(vm.ipArray[i])
+        vm.ipArray.forEach(function(currIP) {
 
-          vm.ipArray[i].status = TCPService.status;
+          TCPService.ping(currIP)
+            .then(
+              function (res){
+                // vm.ipArray[i].status = res;
+                currIP.status = res;
+                console.log(res);
 
-        }
+              },
+              function (err) {
+                currIP.status = err;
+            });
+        });
+
       }, 500);
 
 

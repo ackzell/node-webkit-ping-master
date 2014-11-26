@@ -1,6 +1,6 @@
-function TCPService () {
+function TCPService ($q) {
 
-    var service = {};
+    var service = this;
     service.status = {};
     service.error = false;
 
@@ -8,19 +8,19 @@ function TCPService () {
 
     service.ping = function (ip) {
 
+      var d = $q.defer();
+
       tcpp.ping({ address: ip.address }, function(err, data) {
 
         if (err) {
-          service.status = err;
-          service.error = true;
+          d.reject(err);
         }
-        //console.log(data);
-        service.status = data;
+
+        d.resolve(data);
 
       });
 
+      return d.promise;
     };
-
-    return service;
 
 };
