@@ -14,11 +14,20 @@ function MainCtrl (TCPService) {
     };
 
 
+    vm.options = {
+      frequency: 5000,
+      timeout: 5000,
+      attempts: 10,
+      port: 80
+    };
+
+    vm.cycleStatus = "Stopped";
+
     /*
       This array holds the list of IP addresses that will be
       pinged.
      */
-    vm.ipArray = [{address: "192.168.15.179", alias: "Matchbox"}];
+    vm.ipArray = [];
 
     /*
       This object will help to store the interval which
@@ -45,32 +54,33 @@ function MainCtrl (TCPService) {
      */
     vm.pingRemotes = function () {
 
-      console.log('ping started');
+      vm.cycleStatus = "Started";
 
       var len = vm.ipArray.length;
 
       vm.pingerInterval = setInterval(function(){
 
         vm.ipArray.forEach(function(currIP) {
-          // currIP.status = "pinging...";
+          currIP.status = "Pinging...";
 
-          TCPService.ping(currIP)
+          TCPService.ping(currIP, vm.options)
             .then(
-              function (available){
-                if (available) {
+              function (res){
+
+                if (res.min) {
                   currIP.status = "OK";
                 } else {
                   currIP.status = "ERR";
                 }
 
-                // currIP.details = res;
+                currIP.details = res;
               },
               function (err) {
                 //handle error
             });
         });
 
-      }, 10000);
+      }, vm.options.frequency);
 
 
     };
@@ -80,6 +90,7 @@ function MainCtrl (TCPService) {
      */
     vm.stopPing = function() {
       clearInterval(vm.pingerInterval);
+      vm.cycleStatus = "Stopped";
     };
 
   };

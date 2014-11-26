@@ -16,22 +16,87 @@
 
 
    <div class="container" ng-controller="MainCtrl as mc">
-    <div class="row">
 
-        <form class="form-inline" role="form" ng-submit="mc.addIP()">
-          <div class="form-group">
-            <div class="input-group">
-              <label class="sr-only" for="IP_field">IP Adress</label>
-              <input type="text" class="form-control" id="IP_field" placeholder="Enter an IP adress / hostname" ng-model="mc.ip.address">
+   <div class="row">
+
+        <div class="pull-right">
+          <button class="btn btn-success" ng-click="mc.pingRemotes()" ng-disabled="!mc.ipArray.length">Start Pinging</button>
+          <button class="btn btn-danger" ng-click="mc.stopPing()" ng-disabled="mc.cycleStatus != 'Started'">Stop Pinging</button>
+        </div>
+
+        <div class="pull-left">
+          <button class="btn btn-default" ng-click="mc.collapseForms = !mc.collapseForms">Toggle Forms</button>
+        </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="pull-right">
+            <strong>Ping Cycle Status: </strong>{{mc.cycleStatus}}
+      </div>
+    </div>
+
+    <div class="row" collapse="mc.collapseForms">
+
+        <div class="col-md-7">
+          <h3>Add remotes</h3>
+          <form class="form-inline" role="form" ng-submit="mc.addIP()">
+            <div class="form-group">
+                <label class="sr-only" for="IP_field">IP Adress</label>
+                <input type="text" class="form-control" id="IP_field" placeholder="Enter an IP adress / hostname" ng-model="mc.ip.address">
+                <label class="sr-only" for="alias_field">Alias</label>
+                <input type="text" class="form-control" id="alias_field" placeholder="Enter an IP alias" ng-model="mc.ip.alias">
             </div>
-            <div class="input-group">
-              <label class="sr-only" for="alias_field">Alias</label>
-              <input type="text" class="form-control" id="alias_field" placeholder="Enter an IP alias" ng-model="mc.ip.alias">
-            </div>
-          </div>
-          {{ip}}
-          <button type="submit" class="btn btn-default">Add</button>
-        </form>
+            <button type="submit" class="btn btn-default">Add</button>
+            <p class="help-block">Add the remotes you want to ping here. <br>
+              You can add them even if you started the ping cycle already. <br>
+              You can also hit<code>Enter</code> when done filling the fields.</p>
+          </form>
+
+
+        </div>
+
+        <div class="col-md-5">
+<!--           <p>
+            You can also set some configuration values. <br>
+            Hover over the fields to get more details on what they represent.
+          </p> -->
+
+
+          <h3>Global options</h3>
+          <form class="form-horizontal" role="form" >
+                <div class="form-group">
+                  <label for="frequency_field" class="col-sm-9 control-label">Cycle Frequency (ms):</label>
+                  <div class="col-sm-3">
+                    <input id="frequency_field" type="text" class="form-control input-sm"  ng-model="mc.options.frequency">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="timeout_field" class="col-sm-9 control-label">Timeout (ms):</label>
+                  <div class="col-sm-3">
+                    <input id="timeout_field" type="text" class="form-control input-sm"  ng-model="mc.options.timeout">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="port_field" class="col-sm-9 control-label">Port:</label>
+                  <div class="col-sm-3">
+                    <input id="port_field" type="text" class="form-control input-sm"  ng-model="mc.options.port">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="attempts_field" class="col-sm-9 control-label">Attempts:</label>
+                  <div class="col-sm-3">
+                    <input id="attempts_field" type="text" class="form-control input-sm"  ng-model="mc.options.attempts">
+                  </div>
+                </div>
+          </form>
+          <p class="help-block"> Global parameters that affect all the pings at once. </p>
+        </div>
+
 
       </div>
 
@@ -42,28 +107,29 @@
 
           <thead>
             <tr>
-              <th>IP Adress / hostname</th>
-              <th>IP Alias</th>
-              <th>Status</th>
+              <th class="col-md-4">IP Adress / hostname</th>
+              <th class="col-md-4">IP Alias</th>
+              <th class="col-md-4">Status</th>
             </tr>
           </thead>
 
           <tbody>
-            <tr ng-repeat="item in mc.ipArray">
-              <td>{{item.address}}</td>
-              <td>{{item.alias}}</td>
-              <td>{{item.status}}</td>
+            <tr ng-repeat="item in mc.ipArray" ng-class="{'success': item.status == 'OK', 'danger': item.status == 'ERR'}">
+              <td class="col-md-4">{{item.address}}</td>
+              <td class="col-md-4">{{item.alias}}</td>
+              <td class="col-md-4">{{item.status}}</td>
+
             </tr>
           </tbody>
         </table>
       </div>
 
-      <div class="row">
-        <button class="btn btn-success" ng-click="mc.pingRemotes()">Start Pinging</button>
-        <button class="btn btn-danger" ng-click="mc.stopPing()">Stop Pinging</button>
+
+  <footer class="footer">
+      <div class="container">
+        <p class="text-muted pull-right">PingMaster</p>
       </div>
-
-
+   </footer>
   </div>
 
 
