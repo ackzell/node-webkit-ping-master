@@ -10,11 +10,13 @@ function TCPService ($q) {
 
       var d = $q.defer();
 
-      tcpp.ping({ address: ip.address }, function(err, data) {
+      tcpp.ping({address: ip.address}, function(err, data) {
 
         if (err) {
           d.reject(err);
         }
+
+        console.log(data);
 
         d.resolve(data);
 

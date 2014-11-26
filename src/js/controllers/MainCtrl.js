@@ -7,9 +7,10 @@ function MainCtrl (TCPService) {
       represent an ip address
      */
     var ip = {
-      address: null,
-      alias: null,
-      status: null
+      address : "",
+      alias   : "",
+      status  : "",
+      details : {}
     };
 
 
@@ -17,7 +18,7 @@ function MainCtrl (TCPService) {
       This array holds the list of IP addresses that will be
       pinged.
      */
-    vm.ipArray = [{address: "google.com", alias: "G"}];
+    vm.ipArray = [{address: "192.168.15.179", alias: "Matchbox"}];
 
     /*
       This object will help to store the interval which
@@ -51,21 +52,25 @@ function MainCtrl (TCPService) {
       vm.pingerInterval = setInterval(function(){
 
         vm.ipArray.forEach(function(currIP) {
+          // currIP.status = "pinging...";
 
           TCPService.ping(currIP)
             .then(
-              function (res){
-                // vm.ipArray[i].status = res;
-                currIP.status = res;
-                console.log(res);
+              function (available){
+                if (available) {
+                  currIP.status = "OK";
+                } else {
+                  currIP.status = "ERR";
+                }
 
+                // currIP.details = res;
               },
               function (err) {
-                currIP.status = err;
+                //handle error
             });
         });
 
-      }, 500);
+      }, 10000);
 
 
     };
