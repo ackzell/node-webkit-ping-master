@@ -6,30 +6,49 @@ function TCPService ($q) {
 
     var tcpp = require('tcp-ping');
 
+    var ping = require ("net-ping");
+
+
     service.ping = function (ip, options) {
+
+      var target = ip.address;
 
       var d = $q.defer();
 
-      var options = {
-        address: ip.address,
-        port: options.port || 80,
-        timeout: options.timeout || 5000,
-        attempts: options.attempts || 10
-      };
+      // var options = {
+      //   address: ip.address,
+      //   port: options.port || 80,
+      //   timeout: options.timeout || 5000,
+      //   attempts: options.attempts || 10
+      // };
 
-      console.log(options);
+      // console.log(options);
 
-      tcpp.ping(options, function(err, data) {
+      // tcpp.ping(options, function(err, data) {
 
-        if (err) {
-          d.reject(err);
+      //   if (err) {
+      //     d.reject(err);
+      //   }
+
+      //   console.log(data);
+
+      //   d.resolve(data);
+
+      // });
+
+
+
+    var session = ping.createSession ();
+
+    session.pingHost (target, function (error, target) {
+        if (error) {
+            d.reject(error);
+            console.log (target + ": " + error.toString ());
+        } else {
+            d.resolve(target);
+            console.log (target + ": Alive");
         }
-
-        console.log(data);
-
-        d.resolve(data);
-
-      });
+    });
 
       return d.promise;
     };
