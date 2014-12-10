@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="pinger">
+<html ng-app="pingMaster">
   <head>
     <title>Ping Master</title>
     <link rel="stylesheet" href="css/styles.css">
@@ -44,14 +44,14 @@
           <form class="form-inline" role="form" ng-submit="mc.addIP()">
             <div class="form-group">
                 <label class="sr-only" for="IP_field">IP Adress</label>
-                <input type="text" class="form-control" id="IP_field" placeholder="Enter an IP adress / hostname" ng-model="mc.ip.address">
+                <input type="text" class="form-control" id="IP_field" placeholder="Enter an IP address" ng-model="mc.ip.address">
                 <label class="sr-only" for="alias_field">Alias</label>
                 <input type="text" class="form-control" id="alias_field" placeholder="Enter an IP alias" ng-model="mc.ip.alias">
             </div>
-            <button type="submit" class="btn btn-default">Add</button>
+            <button type="submit" class="btn btn-default" ng-disabled="!mc.ip.address">Add</button>
             <p class="help-block">Add the remotes you want to ping here. <br>
               You can add them even if you started the ping cycle already. <br>
-              You can also hit<code>Enter</code> when done filling the fields.</p>
+              You can also hit <kbd>Enter</kbd> when done filling the fields.</p>
           </form>
 
 
@@ -107,18 +107,19 @@
 
           <thead>
             <tr>
-              <th class="col-md-4">IP Adress / hostname</th>
-              <th class="col-md-4">IP Alias</th>
-              <th class="col-md-4">Status</th>
+              <th class="col-md-3">IP Adress</th>
+              <th class="col-md-3">IP Alias</th>
+              <th class="col-md-3">Status</th>
+              <th class="col-md-3"></th>
             </tr>
           </thead>
 
           <tbody>
-            <tr ng-repeat="item in mc.ipArray" ng-class="{'success': item.status == 'OK', 'danger': item.status == 'ERR'}">
-              <td class="col-md-4">{{item.address}}</td>
-              <td class="col-md-4">{{item.alias}}</td>
-              <td class="col-md-4">{{item.status}}</td>
-
+            <tr ng-repeat="item in mc.ipArray" ng-class="{'success': item.status == 'OK', 'danger': item.status == 'ERR' }">
+              <td class="col-md-3">{{item.address}}</td>
+              <td class="col-md-3">{{item.alias}}</td>
+              <td class="col-md-3">{{item.status}}</td>
+              <td class="col-md-3"><button class="btn btn-sm btn-danger" ng-click="mc.removeIP(item.id)">Remove</button> {{item.details}} </td>
             </tr>
           </tbody>
         </table>
@@ -138,7 +139,7 @@
 
   <script type="text/javascript" src="js/controllers/MainCtrl.js"></script>
 
-  <script type="text/javascript" src="js/services/TCPService.js"></script>
+  <script type="text/javascript" src="js/services/PingService.js"></script>
 
   <!--<script src="js/windowManagement.js"></script>-->
   <script src="app.js"></script>

@@ -42,8 +42,8 @@ function TCPService ($q) {
 
     session.pingHost (target, function (error, target) {
         if (error) {
-            d.reject(error);
-            console.log (target + ": " + error.toString ());
+            d.reject(error.toString());
+            console.log (target + ": " + error.toString());
         } else {
             d.resolve(target);
             console.log (target + ": Alive");
