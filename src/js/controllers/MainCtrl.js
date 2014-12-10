@@ -18,8 +18,7 @@ function MainCtrl (PingService) {
     vm.options = {
       frequency: 5000,
       timeout: 5000,
-      attempts: 10,
-      port: 80
+      attempts: 10
     };
 
     vm.cycleStatus = "Stopped";
@@ -83,6 +82,7 @@ function MainCtrl (PingService) {
               function (res){
 
                 if (res) currIP.status = "OK";
+                currIP.details = "";
 
               },
               function (err) {
