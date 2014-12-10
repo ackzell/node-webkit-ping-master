@@ -30,6 +30,7 @@ Now is a good time to be considered somewhat useful.
   * The ability to edit (inline would be better) the IPs once they have been added.
   * Persist current list of IPs.
   * Load a list from a file (maybe a ``.json`` or something similar).
+
 * Nice to have(s):
   * Auto-update the application.
   * Create an installer (Windows).
