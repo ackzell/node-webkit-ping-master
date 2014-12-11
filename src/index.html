@@ -20,7 +20,7 @@
    <div class="row">
 
         <div class="pull-right">
-          <button class="btn btn-success" ng-click="mc.pingRemotes()" ng-disabled="!mc.ipArray.length">Start Pinging</button>
+          <button class="btn btn-success" ng-click="mc.pingRemotes()" ng-disabled="!mc.ipArray.length || mc.cycleStatus === 'Started' ">Start Pinging</button>
           <button class="btn btn-danger" ng-click="mc.stopPing()" ng-disabled="mc.cycleStatus != 'Started'">Stop Pinging</button>
         </div>
 
@@ -111,8 +111,8 @@
             <tr ng-repeat="item in mc.ipArray" ng-class="{'success': item.status == 'OK', 'danger': item.status == 'ERR' }">
               <td class="col-md-3">{{item.address}}</td>
               <td class="col-md-3">{{item.alias}}</td>
-              <td class="col-md-3">{{item.status}}</td>
-              <td class="col-md-3"><button class="btn btn-sm btn-danger" ng-click="mc.removeIP(item.id)">Remove</button> {{item.details}} </td>
+              <td class="col-md-3">{{item.status}} {{item.details}} </td>
+              <td class="col-md-3"><button class="btn btn-sm btn-danger" ng-click="mc.removeIP(item.id)">Remove</button></td>
             </tr>
           </tbody>
         </table>
