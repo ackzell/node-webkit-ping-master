@@ -4,7 +4,7 @@ function PingService ($q) {
 
     pingService.status = {};
     pingService.error = false;
-    pingService.session = {};
+    pingService.session = null;
 
     var net_ping = require ("net-ping");
 
@@ -19,7 +19,11 @@ function PingService ($q) {
         timeout: options.timeout
       };
 
-      pingService.session = net_ping.createSession(net_ping_options);
+      try {
+        pingService.session = net_ping.createSession(net_ping_options);
+      } catch (e) {
+        console.log(e);
+      }
 
       pingService.session.pingHost (target, function (error, target) {
 
@@ -38,7 +42,10 @@ function PingService ($q) {
     };
 
     pingService.stop = function () {
-      pingService.session.close();
+
+      if (pingService.session) {
+        pingService.session.close();
+      }
 
     };
 
